@@ -4,7 +4,7 @@
 #ifndef PARSER_TOKEN_H
 #define PARSER_TOKEN_H
 
-#include <cstring>
+#include <string.h>
 #include <iostream>
 #include <map>
 

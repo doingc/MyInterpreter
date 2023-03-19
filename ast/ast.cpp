@@ -3,3 +3,9 @@
 //
 
 #include "ast.h"
+std::vector<std::string> ast::tokenliteral(){
+    if(this->statements.size() > 0){
+        return statements;
+    }
+    else return std::vector<std::string>{{""}};
+};

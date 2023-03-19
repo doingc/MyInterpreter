@@ -2,6 +2,7 @@
 #include "token/token.h"
 #include "repl/repl.h"
 #include <iostream>
+#include<string.h>
 using namespace std;
 int main(){
     std::cout<<">>>>please try it"<<endl;

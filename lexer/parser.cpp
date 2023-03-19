@@ -28,7 +28,7 @@ token* parser::NextToken() {
             if (peekChar() == '=') {
                 char t_ch = ch;
                 readChar();
-                string s = t_ch + "" + ch;
+                string s = to_string(t_ch) + to_string(ch)  ;
                 tok = new token(token::EQ, s);
             } else {
                 tok = newToken(token::ASSIGN, ch);
@@ -44,7 +44,7 @@ token* parser::NextToken() {
             if (peekChar() == '=') {
                 char p = ch;
                 readChar();
-                std::string r = p + "" + ch;
+                std::string r = to_string(p)  + to_string(ch);
                 tok = new token(token::NOT_EQ, r);
             } else {
                 tok = newToken(token::BANG, ch);

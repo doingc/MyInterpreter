@@ -2,7 +2,8 @@
 #include <algorithm>
 #include <exception>
 #include <iostream>
-
+#include <string.h>
+#include <vector>
 using namespace std;
 
 void print_anthor_name();
@@ -47,7 +48,7 @@ void print_anthor_name() {
     cout << name << endl;
 }
 
-void print_parser_errors(vector<string> errors) {
+void print_parser_errors(vector<std::string> errors) {
     print_anthor_name();
     cout << "Woops! We ran into some `mirror` business here!\n";
     cout << " parser errors:\n";

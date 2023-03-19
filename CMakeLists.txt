@@ -10,4 +10,6 @@ add_executable(MyInterpreter
         lexer/parser.h
         lexer/parser.cpp
         repl/repl.cpp
-        repl/repl.h ast/ast.cpp ast/ast.h)
+        repl/repl.h
+        ast/ast.cpp
+        ast/ast.h)
